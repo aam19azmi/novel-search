@@ -6,7 +6,7 @@ export async function generateMetadata() {
   let novels = [];
 
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/novels`, {
+    const res = await fetch(`/api/novels`, {
       cache: "no-store",
     });
 
