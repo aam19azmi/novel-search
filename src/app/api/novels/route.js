@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { novels } from "@/data/novels";
+import { novels } from "@/data/novels_2";
   
 export async function GET(request) {
     const { searchParams } = new URL(request.url);
