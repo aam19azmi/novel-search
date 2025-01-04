@@ -3,13 +3,14 @@
 import { useRef, useState } from "react";
 
 export default function Modal({ novel, onClose }) {
-  if (!novel) return null;
-
   const [isExpanded, setIsExpanded] = useState(false);
   const maxLength = 200; // Max characters to display before truncating
 
   // Handler to detect clicks outside the modal content
   const modalRef = useRef();
+  
+  if (!novel) return null;
+
 
   const handleOverlayClick = (e) => {
     if (modalRef.current && !modalRef.current.contains(e.target)) {
