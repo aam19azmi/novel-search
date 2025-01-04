@@ -6,7 +6,7 @@ export async function generateMetadata() {
   let novels = [];
 
   try {
-    const res = await fetch(`/api/novels`, {
+    const res = await fetch(`https://novelsearch.netlify.app/api/novels`, {
       cache: "no-store",
     });
 
@@ -62,7 +62,7 @@ export default async function Home() {
   let novels = [];
 
   try {
-    const res = await fetch(`/api/novels`, {
+    const res = await fetch(`https://novelsearch.netlify.app/api/novels`, {
       cache: "no-store",
     });
 
